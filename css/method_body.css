@@ -15,6 +15,10 @@ p{
     padding-left: 10px;
 }
 
+img{
+    padding-left: 10px;
+}
+
 @media only screen and (min-width: 1300px){
     p{
         margin: 0 230px;
