@@ -1,5 +1,4 @@
 *{
-    color: #1F2833;
     font-size: 20px;
 }
 
@@ -9,6 +8,7 @@
     font-weight: bolder;
     margin-top: 40px;
     margin-bottom: 35px;
+    color: #1F2833;
 }
 
 .left_title_text{
@@ -17,19 +17,32 @@
     font-weight: bolder;
     margin-top: 40px;
     margin-bottom: 35px;
+    color: #1F2833;
 }
 
 p{
-    padding-left: 10px;
+    color: #1F2833;
 }
 
-img{
-    padding-left: 10px;
+#uList_text{
+    color: #1F2833;
+}
+
+#oList_text{
+    color: #1F2833;
 }
 
 @media only screen and (min-width: 1300px){
     p{
         margin: 0 230px;
+    }
+
+    #uList_text{
+        margin: 0 250px;
+    }
+
+    #oList_text{
+        margin: 0 249px;
     }
 
     .left_title_text{
@@ -41,16 +54,40 @@ img{
     p{
         margin: 0 180px;
     }
+
+    #uList_text{
+        margin: 0 200px;
+    }
+
+    #oList_text{
+        margin: 0 200px;
+    }
 }
 
 @media only screen and (max-width: 1000px){
     p{
         margin: 0 130px;
     }
+
+    #uList_text{
+        margin: 0 148px;
+    }
+
+    #oList_text{
+        margin: 0 148px;
+    }
 }
 
 @media only screen and (max-width: 900px){
     p{
         margin: 0;
+    }
+
+    #uList_text{
+        margin: 0 19px;
+    }
+
+    #oList_text{
+        margin: 0 19px;
     }
 }
