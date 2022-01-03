@@ -1,9 +1,28 @@
 var app = angular.module("myApp", ["ngRoute"]);
 
-// app.controller("mainCtrl", function($scope, $http) {
+app.config(function ($routeProvider) {
+    $routeProvider
+        .when("/", {
+            templateUrl: "home.html"
+        })
+        .when("/Menu", {
+            templateUrl: "menu.html"
+        })
+        .when("/Cart", {
+            templateUrl: "cart.html"
+        })
+        .when("/About", {
+            templateUrl: "contact.html"
+        });
+});
 
-//     $http.get("json.json").then(function(response) {
-//         $scope.Data = response.data;
-//         return $scope.Data;
-//     });
-// });
+
+app.run(function ($rootScope, $http) {
+
+    $http.get("accessories.json").then(function (response) {
+        $rootScope.accessories = response.data.accessories;
+        console.log($rootScope.accessories);
+
+    });
+    
+});
