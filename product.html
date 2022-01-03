@@ -9,7 +9,7 @@
     <!--CSS FILE-->
     <link rel="stylesheet" href="css/navstyle.css">
     <link rel="stylesheet" href="css/footerstyle.css">
-    <link rel="stylesheet" href="css/method_body.css">
+    <link rel="stylesheet" href="css/product_body.css">
     <!--CSS FILE End-->
 
     <!--CSS FONT-->
@@ -29,7 +29,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.2/angular-route.min.js"></script>
     
-    <script src="script/js.js"></script>
+    <script src="js.js"></script>
     <!--SCRIPT FILE End-->
 </head>
 
@@ -68,7 +68,7 @@
     <!--BODY-->
 
     <div class="container">
-        <div class="row" ng-controller="productControl">
+        <div class="row">
             <div ng-repeat="item in accessories" class="col-sm-12 col-md-6 item">
                 <img src="images/{{accessories.image}}"> <br>
                 {{accessories.name|uppercase}} <br>
