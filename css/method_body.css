@@ -1,5 +1,6 @@
-*{
+body{
     font-size: 20px;
+    color: #1F2833;
 }
 
 .title_text{
@@ -17,18 +18,6 @@
     font-weight: bolder;
     margin-top: 40px;
     margin-bottom: 35px;
-    color: #1F2833;
-}
-
-p{
-    color: #1F2833;
-}
-
-#uList_text{
-    color: #1F2833;
-}
-
-#oList_text{
     color: #1F2833;
 }
 
