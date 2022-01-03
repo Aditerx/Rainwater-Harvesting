@@ -34,7 +34,7 @@
 </head>
 
 
-<body>
+<body ng-app="myApp">
     <!--NavBar Start-->
     <section class="header">
         <nav class="navbar-expand-lg navbar-light">
@@ -67,8 +67,8 @@
 
     <!--BODY-->
 
-    <div class="container" ng-app="myApp" ng-controller="productControl">
-        <div class="row">
+    <div class="container">
+        <div class="row" ng-controller="productControl">
             <div ng-repeat="item in accessories" class="col-sm-12 col-md-6 item">
                 <img src="images/{{accessories.image}}"> <br>
                 {{accessories.name|uppercase}} <br>
