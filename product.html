@@ -6,25 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
 
-    <!--CSS FILE-->
+    <!-- CSS FILE -->
     <link rel="stylesheet" href="css/navstyle.css">
+    <link rel="stylesheet" href="css/ontop_button.css">
     <link rel="stylesheet" href="css/footerstyle.css">
     <link rel="stylesheet" href="css/product_body.css">
-    <!--CSS FILE End-->
+    <!-- CSS FILE End -->
 
-    <!-- Bootstrap CSS CDN -->
+    <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-    <!--CSS FONT-->
+    <!-- CSS FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-    <!--CSS FONT End-->
+    <!-- CSS FONT End -->
 
-    <!--SCRIPT FILE-->
+    <!-- SCRIPT FILE -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -38,25 +39,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 
     <script src="js.js"></script>
-    <!--SCRIPT FILE End-->
+    <!-- SCRIPT FILE End -->
 </head>
 
 
+
 <body ng-app="myApp">
-    <!--NavBar Start-->
+    <!-- NavBar Start -->
     <section class="header">
         <nav class="navbar-expand-lg navbar-light">
+            <!-- Logo -->
             <img src="images/logo.png" alt="logo" id="logo" class="navbar-brand">
-
-            <!--Navbar toggler-->
+            <!-- Navbar toggler -->
             <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!--Navbar links-->
+            <!-- Navbar links -->
             <ul class="collapse navbar-collapse navbar-nav" id="navbarSupportedContent">
                 <li class="nav-item active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item dropdown"><a href="index.html">Rainwater Harvesting</a>
+                <li class="nav-item dropdown"><a href="#">Rainwater Harvesting</a>
                     <ul>
                         <li><a href="residential.html">Residential Area</a></li>
                         <li><a href="commercial.html">Commercial Area</a></li>
@@ -69,107 +70,122 @@
             </ul>
         </nav>
     </section>
-    <!--NavBar End-->
+    <!-- NavBar End -->
 
 
 
-    <!--BODY-->
-
-
-    <!--Thumbnail-->     
-
-    <div class="thumbnail">
-        <img src="images/Camera Roll/prod_thumbnail.jpg"  class="w-100">
-        <div class="centered">Products</div>
-    </div>
-
-    <div class="container">
-        <h1 class="title_text">Accessories</h1>
-        <div class="row">
-            <div ng-repeat="item in accessories" class="list-group-item">
-                <img src="images/{{item.image}}" class="mb-4"> <br>
-                <b>{{item.name|uppercase}}</b> <br><br>
-                {{item.description}} <br><br>
+    <!-- BODY -->
+        <!-- On Top Button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- Thumbnail -->     
+        <div>
+            <img src="images/Camera Roll/prod_thumbnail.jpg"  class="w-100">
+        </div>
+        <!-- Provide Available Accessories -->
+        <div class="container">
+            <h1 class="title_text">Accessories</h1>
+            <div class="row">
+                <div ng-repeat="item in accessories" class="list-group-item">
+                    <img src="images/{{item.image}}" class="mb-4"> <br>
+                    <b>{{item.name|uppercase}}</b> <br><br>
+                    {{item.description}} <br><br>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <h1 class="title_text">Pumps & Controls</h1>
-        <div class="row">
-            <div ng-repeat="item in pumpControl" class="list-group-item w-100">
-                <img src="images/{{item.image}}" class="mb-4"> <br>
-                <b>{{item.name|uppercase}}</b> <br><br>
-                {{item.description}} <br><br>
+        <!-- Provide Available Pumps & Controls -->
+        <div class="container">
+            <h1 class="title_text">Pumps & Controls</h1>
+            <div class="row">
+                <div ng-repeat="item in pumpControl" class="list-group-item w-100">
+                    <img src="images/{{item.image}}" class="mb-4"> <br>
+                    <b>{{item.name|uppercase}}</b> <br><br>
+                    {{item.description}} <br><br>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <h1 class="title_text mb-5">Water Sterilisation</h1>
-        <div class="row">
-            <div ng-repeat="item in water_sterilisation" class="list-group-item w-100">
-                <img src="images/{{item.image}}" class="mb-4"> <br>
-                <b>{{item.name|uppercase}}</b> <br><br>
-                {{item.description}} <br><br>
+        <!-- Provide Available Water Sterilisation -->
+        <div class="container">
+            <h1 class="title_text mb-5">Water Sterilisation</h1>
+            <div class="row">
+                <div ng-repeat="item in water_sterilisation" class="list-group-item w-100">
+                    <img src="images/{{item.image}}" class="mb-4"> <br>
+                    <b>{{item.name|uppercase}}</b> <br><br>
+                    {{item.description}} <br><br>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <h1 class="title_text">Tanks</h1>
-        <div class="row">
-            <div ng-repeat="item in tanks" class="list-group-item w-100">
-                <img src="images/{{item.image}}" class="mb-4"> <br>
-                <b>{{item.name|uppercase}}</b> <br><br>
-                {{item.description}} <br><br>
+        <!-- Provide Available Tanks -->
+        <div class="container">
+            <h1 class="title_text">Tanks</h1>
+            <div class="row">
+                <div ng-repeat="item in tanks" class="list-group-item w-100">
+                    <img src="images/{{item.image}}" class="mb-4"> <br>
+                    <b>{{item.name|uppercase}}</b> <br><br>
+                    {{item.description}} <br><br>
+                </div>
             </div>
         </div>
-    </div>
+        <!-- Recommend Suitable Products For Each Area -->
+        <div class="container mb-5">
+            <h1 class="title_text">Our Recommendation</h1>
+            <p class="list-group-item w-100">
+                <b>Storage Type & Location:</b> <br><br>
+                Rainwater harvesting storage is located above ground, below ground, or partially buried. In deciding what storage is best for you, the key factors are cost and aesthetics. Other factors such as grade, allocated space, and underground geology can be a factor as well. <br><br>
+                Above ground tanks require the least amount of excavation which can reduce costs dramatically. These can be hidden behind trees or placed away from the home. Many people also use quality above ground tanks as features that complement their landscape design. <br><br>
+                Partially buried is a variation in the installation of above-ground tanks, where the tank is placed slightly in the ground, usually going a quarter to halfway up the tank. <br><br>
+                Generally, in-ground tanks require a larger footprint. Excavation costs can be significantly increased when rock is encountered. In-ground tanks vary in their load-bearing capacity from riding lawn mowers to cars to semi-trucks. Because it allows the ability to use the space, this is an attractive option for many rain harvesters. <br><br>
+                Note that precast concrete tanks are limited in size and poured concrete tanks are obsolete. If used, concrete tanks should be coated on the inside to protect against deterioration caused by the slightly lower P.H. of rainwater. These tanks are not suitable for potable water. <br><br> 
+                Therefore, we highly recommend that all installations should be consider throughoutly. Your system can be much more efficient and cost less by this method. <br><br>
 
-    <div class="container">
-        <h1 class="title_text">Our Recommendation</h1>
-        <p class="list-group-item w-100">
+                <b>For Residential Area:</b> <br><br>
+                Harvesting in residential area usually range from small to medium due to need and financial capacity. There is no need of a big and costly collecting system. We recomend these following products: <br><br>
+                Common vessels used for very small-scale water storage in developing countries include plastic bowls and buckets, jerry cans, clay or ceramic jars, cement jars, old oil drums, empty food containers, etc. For larger quantity a polyethylene tank will do just fine, you can also consider a low profile plastic tank. <br><br>
+                Pumps in this area is usually the 1 pump type, but you can also consider a 2 pump one. Controller doesn<span>&#39;</span>t need to be complicated, just simple buttons and high safety. <br><br>
+                Filter can vary based on use, for irrigation, flushing toilet or washing cars, you just need a basic one to clear out harvested water. To fit for any potable need you will need to spend little or more on some devices, choose wisely. <br><br>
 
-        </p>
-    </div>
-
-    <!--BODY End-->
-
+                <b>For Commercial Area:</b> <br><br>
+                Commercial area harvesting rarely appear in a small range, for long term purpos high durability products are selected: <br><br>
+                An underground system is the most suitable for this area, choose a durable tanks like polyethylene, fiberglass, bolted<span>&minus;</span>steel or modular storage, which is the most used in commercial applications. <br><br>
+                A 2 pump type is require for water to reach its place, controller must be able to control all system and safe, filter can vary.
+            </p>
+        </div>
+    <!-- BODY End -->
 </body>
 
 
 
-   <!--FOOTER-->
-   <div class="footer">
-    <nav class="navbar-expand-lg navbar-light">
-        <img src="images/logo.png" alt="logo" id="logo" class="navbar-brand">
-        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <ul class="collapse navbar-collapse navbar-nav" id="navbarSupportedContent">
-            <li class="nav-item active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-            <li class="nav-item dropdown"><a href="index.html">Rainwater Harvesting</a>
-                <ul>
-                    <li><a href="residential.html">Residential Area</a></li>
-                    <li><a href="commercial.html">Commercial Area</a></li>
-                    <li><a href="#">Products</a></li>
-                </ul>
-            </li>
-            <li class="nav-item"><a href="method.html">Methods</a></li>
-            <li class="nav-item"><a href="development.html">Developments</a></li>
-            <li class="nav-item"><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="contact">
-    <p><i class="bi bi-house-fill"></i> 590 Cach Mang Thang Tam, Ward 11, District 3, Ho Chi Minh City</p>
-    <p><i class="bi bi-envelope-fill"></i> Group2@gmail.com</p>
-    <p><i class="bi bi-telephone-fill"></i> 1800 1779</p>
+    <!-- FOOTER -->
+    <div class="footer">
+        <nav class="navbar-expand-lg navbar-light">
+            <!-- Toggler -->
+            <img src="images/logo.png" alt="logo" id="logo" class="navbar-brand">
+            <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links -->
+            <ul class="collapse navbar-collapse navbar-nav" id="navbarSupportedContent">
+                <li class="nav-item active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item dropdown"><a href="#">Rainwater Harvesting</a>
+                    <ul>
+                        <li><a href="residential.html">Residential Area</a></li>
+                        <li><a href="commercial.html">Commercial Area</a></li>
+                        <li><a href="#">Products</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="method.html">Methods</a></li>
+                <li class="nav-item"><a href="development.html">Developments</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Contact info -->
+        <div class="contact">
+        <p><i class="bi bi-house-fill"></i> 590 Cach Mang Thang Tam, Ward 11, District 3, Ho Chi Minh City</p>
+        <p><i class="bi bi-envelope-fill"></i> Group2@gmail.com</p>
+        <p><i class="bi bi-telephone-fill"></i> 1800 1779</p>
+        </div>
+        <!-- Copyright -->
+        <hr>
+        <p style="padding: 12px 0px;">Copyright &copy; 2021 by Group 2. All rights reserved.</p>
     </div>
-    <hr>
-    <p style="padding: 12px 0px;">Copyright &copy; 2021 by Group 2. All rights reserved.</p>
-</div>
-<!--FOOTER End-->
-
+    <!-- FOOTER End -->
 </html>

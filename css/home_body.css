@@ -1,3 +1,5 @@
+/* Thumbnail text  */
+
 #text{
     position: relative; 
     transition: .5s ease;
@@ -7,6 +9,8 @@
 .thumbnail:hover #text{
     opacity: 1;
 }
+
+/* Body */
 
 .body img{
     width: 100%;
@@ -37,6 +41,8 @@
     margin-top: -.25cm;
 }
 
+/* Introduction */
+
 .intro h1{
     text-align: center;
     font-size: 50px;
@@ -58,6 +64,8 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+/* All rainwater benefits */
 
 .benefits h1{
     text-align: center;
@@ -87,6 +95,8 @@
     margin-right: auto;
 }
 
+/* Some harvesting techniques info */
+
 .methods h1{
     text-align: center;
     font-size: 50px;
@@ -109,6 +119,8 @@
     color: #1F2833;
 }
 
+/* Members info */
+
 .members h1{
     text-align: center;
     font-size: 50px;
@@ -125,6 +137,8 @@
     border-radius: 20px;
     border-style: solid;
 }
+
+/* Adjust based on browser width */
 
 @media only screen and (min-width: 1300px){
     .intro p{

@@ -1,3 +1,5 @@
+/* Thumnail  */
+
 .com_thumbnail img{
     width: 100%;
 }
@@ -19,6 +21,8 @@
     font-weight: bolder;
 }
 
+/* Introduction */
+
 .com_intro p{
     justify-content: center;
     padding: 0 50px;
@@ -33,6 +37,8 @@
     margin-right: auto;
     margin-top: 50px;
 }
+
+/* Provide common rainwater uses for commercial buildings */
 
 .com_uses h1{
     text-align: center;
@@ -70,6 +76,9 @@
     padding: 15px 0;
 
 }
+
+/* Explaining methods in commercial area */
+
 .com_explain h1{
     text-align: center;
     margin-top: 50px;
@@ -115,6 +124,8 @@
     padding-left: 50px;
     padding-right: 50px;
 }
+
+/* Adjusting based on browser window width */
 
 @media only screen and (min-width: 1300px){
     h2{

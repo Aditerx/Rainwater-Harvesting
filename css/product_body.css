@@ -1,29 +1,18 @@
+/* Body */
+
 body{
     font-size: 20px;
     color: #1F2833;
     text-align: center;
 }
 
-.thumbnail{
-    position: relative;
-}
-
-.centered{
-    position: absolute;
-    color: white;
-    font-weight: bolder;
-    font-size: 60px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+/* Tittle text */
 
 .title_text{
     background-color: gainsboro;
     border: solid 2px;
     border-radius: 50%;
-    padding: 3%;
-    margin: 1em 7em;
+    padding: 1em;
+    margin: 1em auto;
     text-align: center;
-    overflow: hidden;
 }

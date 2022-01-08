@@ -1,3 +1,5 @@
+/* Thumbnail */
+
 .res_thumbnail p{
     padding: 10px 50px 0px 50px;
     font-size: 15px;
@@ -13,6 +15,8 @@
     font-weight: bolder;
 }
 
+/* Introduction */
+
 .res_intro p{
     justify-content: center;
     padding: 0 50px;
@@ -27,6 +31,8 @@
     margin-right: auto;
     margin-top: 50px;
 }
+
+/* Common rainwater uses for residential buildings */
 
 .res_uses h1{
     text-align: center;
@@ -64,6 +70,9 @@
     padding: 15px 0;
 
 }
+
+/* Explaining methods in residential area */
+
 .res_explain h1{
     text-align: center;
     margin-top: 50px;
@@ -109,6 +118,8 @@
     padding-left: 50px;
     padding-right: 50px;
 }
+
+/* Adjust based on browser width */
 
 @media only screen and (min-width: 1300px){
     h2{

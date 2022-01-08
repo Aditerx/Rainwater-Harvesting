@@ -1,7 +1,11 @@
+/* Body */
+
 body{
     font-size: 20px;
     color: #1F2833;
 }
+
+/* Tittle text */
 
 .title_text{
     text-align: center;
@@ -12,6 +16,8 @@ body{
     color: #1F2833;
 }
 
+/* Smaller title */
+
 .left_title_text{
     text-align: center;
     font-size: 35px;
@@ -20,6 +26,8 @@ body{
     margin-bottom: 35px;
     color: #1F2833;
 }
+
+/* Adjust based on browser width */
 
 @media only screen and (min-width: 1300px){
     p{

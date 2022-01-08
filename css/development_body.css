@@ -1,7 +1,11 @@
-*{
+/* Body */
+
+body{
     color: #1F2833;
     font-size: 20px;
 }
+
+/* Tittle text */
 
 .title_text{
     text-align: center;
@@ -11,13 +15,7 @@
     margin-bottom: 35px;
 }
 
-p{
-    padding-left: 10px;
-}
-
-img{
-    padding-left: 10px;
-}
+/* Adjust based on browser width */
 
 @media only screen and (min-width: 1300px){
     p{

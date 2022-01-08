@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainwater Harvesting</title>
 
-    <!--CSS FILE-->
+    <!-- CSS FILE -->
     <link rel="stylesheet" href="css/navstyle.css">
+    <link rel="stylesheet" href="css/ontop_button.css">
     <link rel="stylesheet" href="css/footerstyle.css">
     <link rel="stylesheet" href="css/home_body.css">
-    <!--CSS FILE END-->
+    <!-- CSS FILE End -->
 
-    <!--CSS FONT-->
+    <!-- CSS FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <!--CSS FONT END-->
+    <!-- CSS FONT End -->
 
-    <!--SCRIPT FILE-->
+    <!-- SCRIPT FILE-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -27,18 +28,22 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.2/angular-route.min.js"></script>
-    <!--SCRIPT FILE END-->
+    
+    <script src="js.js"></script>
+    <!-- SCRIPT FILE End -->
 </head>
 
 <body>
-    <!--NavBar Start-->
+    <!-- NavBar Start -->
     <section class="header">
         <nav class="navbar-expand-lg navbar-light">
+            <!-- Logo -->
             <img src="images/logo.png" alt="logo" id="logo" class="navbar-brand">
+            <!-- Navbar toggler -->
             <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <!-- Navbar links -->
             <ul class="collapse navbar-collapse navbar-nav" id="navbarSupportedContent">
                 <li class="nav-item active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
                 <li class="nav-item dropdown"><a href="#">Rainwater Harvesting</a>
@@ -54,127 +59,142 @@
             </ul>
         </nav>
     </section>
-    <!--NavBar End-->
+    <!-- NavBar End -->
 
-    <section class="body">
-        <div class="thumbnail">
-            <img src="images/slogan.png">
-            <div id="text">
-                <h1 id="slogan">EVERY DROP COUNTS</h1>
-                <p>Join us to save water today!</p>
+
+
+    <!-- BODY -->
+        <section class="body">
+            <!-- On Top Button -->
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <!-- Thumbnail -->
+            <div class="thumbnail">
+                <img src="images/slogan.png">
+                <div id="text">
+                    <h1 id="slogan">EVERY DROP COUNTS</h1>
+                    <p>Join us to save water today!</p>
+                </div>
             </div>
-        </div>
-
-        <div class="intro">
-            <h1><b>What is Rainwater Harvesting?</b></h1>
-            <p>
-                <b>Rainwater Harvesting</b> is a technology used to collect, convey and store rainwater from relatively clean surfaces like the roof, rock catchment or land surface <span>&minus;</span> essentially for later use. This collected rainwater is either directed to recharge groundwater or stored in a rainwater tank. <br><br>
-                <b>Rainwater Harvesting</b> isn<span>&#39;</span>t some modern technology, it has been practiced for over 4000 years throughout the world. Traditionally in arid and semi-arid areas, rainwater harvesting systems have provided water for domestic use, drinking, livestock, and small irrigation purposes. Today, rainwater harvesting is gathering a lot of significance as a modern, water<span>&minus;</span>saving and simple technology.
-            </p>
-            <img src="images/explain.jpg" class="pb-5">
-            <p>
-                Rainwater is one free water source and comparatively clean; with proper treatment, it can be used for several non-potable uses. <b>Rainwater Harvesting</b> not only relieves the pressure on sewers and the environment by mitigating floods, soil erosions and replenishing groundwater levels, but also helps in reducing the consumption of potable water. <br><br>
-                There are so many reasons why we should start collecting rainwater. From doing our part for the environment and saving money on water bills to having constant access to water <span>&minus;</span> collecting rainwater can be beneficial in so many ways.
-            </p>
-            <img src="images/Camera Roll/1024px-Rainwater_harvesting_tank_(5981896147).png">
-        </div>
-
-        <div class="benefits">
-            <h1>The befenits of using Rainwater:</h1>
-            <ul>
-                <li>Reduce water bills</li>
-                <li>Chemical-free</li>
-                <li>Maintain a green, healthy garden</li>
-                <li>Good for skin and hair</li>
-                <li>High self-sustainability</li>
-                <li>Provide an alternative supply during water restrictions</li>
-                <li>Decreases storm water runoff</li>
-                <li>Helping to reduce local flooding and scouring of creeks</li>
-            </ul>
-            <img src="images/benefits.jpg">
-        </div>
-
-        <div class="methods">
-            <h1>Available harvesting techniques</h1>
-            <p>
-                It is simple to collect rainwater from building roofs and numerous other sources. As long as you are ready and equipped with a couple of different items you have all that it takes to begin rainwater harvesting and enjoying naturally delicious, clean, and useful water. <b>Rainwater harvesting systems</b> can be purchased complete from various home improvement stores. The cost of these systems will vary. <br><br>
-                Below are some of the <b>techniques</b> for rainwater harvesting, which will be explained in detail in the <b><a href="method.html" title="Go to page?" class="text-dark">Methods webpage</a>:</b><br><br>                
-            </p>
-
-            <p>            
-                <b>1. Rainwater Barrels: </b><br><br>
-                The easiest and cheapest way to start harvesting rainwater in your home. A barrel is simply installed underneath the downspout of the guttering so that rain falling on the roof is funneled into the barrel.
-            </p>
-            <img class="pb-2" src="images/Camera Roll/UDDT_with_rainwater_harvesting_(3441547910).png">
-
-            <p>
-                <b>2. Dry System: </b><br><br>
-                A well-known method of rainwater harvesting. It<span>&#39;</span>s basically an improvement to the rainwater barrel technique in terms of size.
-            </p>
-            <img class="pb-2" src="images/Camera Roll/1280px-Rainwater_harvesting_systems_in_Kiribati_(10715703914).png">
-
-            <p>
-                <b>3. Wet System: </b><br><br>
-                The exact opposite of the dry system. This is because the collection pipes are located underground and always full of water.
-            </p>
-            <img class="pb-2" src="images/Camera Roll/wet-vs-dry-system.png">
-
-            <p>
-                <b>4. Green Roof: </b><br><br>
-                Instead of directing rainwater for storage in the tank and then channel it to the garden, you could install a green roof on your house to enable plants to use the water instantly.
-            </p>
-            <img class="pb-2" src="images/Camera Roll/eco_friendly_sky_garden_home.png">
-
-            <p>
-                <b>5. Retention Ponds: </b><br><br>
-                Retention ponds are used to collect surface runoff water and can be used for groundwater recharge, irrigation or any other purpose other than potable uses.
-            </p>
-            <img src="images/Camera Roll/csm_Rural21_1_2020_S12_f52be6dbc2.png">
-            
-            <p>
-                <b>6. Permeable Pavers: </b><br><br>
-                A Permeable Pavement stormwater runoff system stores water by allowing stormwater runoff to infiltrate through porous surfaces into a storage reservoir.          
-            </p>
-            <img src="images/Camera Roll/pavement.png">
-        </div>
-
-        <div class="members">
-            <h1>Website Creators</h1>
-            <p>Huynh Ngoc Thanh - Student1339033</p>
-            <p>Nguyen Phat Tai - Student1316806</p>
-            <p>Nguyen Pham Thi Cam Tu - Student1335967</p>
-            <p>Nguyen Hai Hoang - Student1339262</p>
-        </div>
-    </section>
+            <!-- Introduction -->
+            <div class="intro">
+                <h1><b>What is Rainwater Harvesting?</b></h1>
+                <p>
+                    <b>Rainwater Harvesting</b> is a technology used to collect, convey and store rainwater from relatively clean surfaces like the roof, rock catchment or land surface <span>&minus;</span> essentially for later use. This collected rainwater is either directed to recharge groundwater or stored in a rainwater tank. <br><br>
+                    <b>Rainwater Harvesting</b> isn<span>&#39;</span>t some modern technology, it has been practiced for over 4000 years throughout the world. Traditionally in arid and semi-arid areas, rainwater harvesting systems have provided water for domestic use, drinking, livestock, and small irrigation purposes. Today, rainwater harvesting is gathering a lot of significance as a modern, water<span>&minus;</span>saving and simple technology.
+                </p>
+                <img src="images/explain.jpg" class="pb-5">
+                <p>
+                    Rainwater is one free water source and comparatively clean; with proper treatment, it can be used for several non-potable uses. <b>Rainwater Harvesting</b> not only relieves the pressure on sewers and the environment by mitigating floods, soil erosions and replenishing groundwater levels, but also helps in reducing the consumption of potable water. <br><br>
+                    There are so many reasons why we should start collecting rainwater. From doing our part for the environment and saving money on water bills to having constant access to water <span>&minus;</span> collecting rainwater can be beneficial in so many ways.
+                </p>
+                <img src="images/Camera Roll/1024px-Rainwater_harvesting_tank_(5981896147).png">
+            </div>
+            <!-- List all rainwater benefits -->
+            <div class="benefits">
+                <h1>The befenits of using Rainwater:</h1>
+                <ul>
+                    <li>Reduce water bills</li>
+                    <li>Chemical-free</li>
+                    <li>Maintain a green, healthy garden</li>
+                    <li>Good for skin and hair</li>
+                    <li>High self-sustainability</li>
+                    <li>Provide an alternative supply during water restrictions</li>
+                    <li>Decreases storm water runoff</li>
+                    <li>Helping to reduce local flooding and scouring of creeks</li>
+                </ul>
+                <img src="images/benefits.jpg">
+            </div>
+            <!-- Provide some harvesting techniques info -->
+            <div class="methods">
+                <h1>Available harvesting techniques</h1>
+                <p>
+                    It is simple to collect rainwater from building roofs and numerous other sources. As long as you are ready and equipped with a couple of different items you have all that it takes to begin rainwater harvesting and enjoying naturally delicious, clean, and useful water. <b>Rainwater harvesting systems</b> can be purchased complete from various home improvement stores. The cost of these systems will vary. <br><br>
+                    Below are some of the <b>techniques</b> for rainwater harvesting, which will be explained in detail in the <b><a href="method.html" title="Go to page?" class="text-dark">Methods webpage</a>:</b><br><br>                
+                </p>
+                <!-- Rainwater Barrels -->
+                <p>            
+                    <b>1. Rainwater Barrels: </b><br><br>
+                    The easiest and cheapest way to start harvesting rainwater in your home. A barrel is simply installed underneath the downspout of the guttering so that rain falling on the roof is funneled into the barrel.
+                </p>
+                <img class="pb-2" src="images/Camera Roll/UDDT_with_rainwater_harvesting_(3441547910).png">
+                <!-- Dry System -->
+                <p>
+                    <b>2. Dry System: </b><br><br>
+                    A well-known method of rainwater harvesting. It<span>&#39;</span>s basically an improvement to the rainwater barrel technique in terms of size.
+                </p>
+                <img class="pb-2" src="images/Camera Roll/1280px-Rainwater_harvesting_systems_in_Kiribati_(10715703914).png">
+                <!-- Wet System -->
+                <p>
+                    <b>3. Wet System: </b><br><br>
+                    The exact opposite of the dry system. This is because the collection pipes are located underground and always full of water.
+                </p>
+                <img class="pb-2" src="images/Camera Roll/wet-vs-dry-system.png">
+                <!-- Green Roof -->
+                <p>
+                    <b>4. Green Roof: </b><br><br>
+                    Instead of directing rainwater for storage in the tank and then channel it to the garden, you could install a green roof on your house to enable plants to use the water instantly.
+                </p>
+                <img class="pb-2" src="images/Camera Roll/eco_friendly_sky_garden_home.png">
+                <!-- Retention Ponds -->
+                <p>
+                    <b>5. Retention Ponds: </b><br><br>
+                    Retention ponds are used to collect surface runoff water and can be used for groundwater recharge, irrigation or any other purpose other than potable uses.
+                </p>
+                <img src="images/Camera Roll/csm_Rural21_1_2020_S12_f52be6dbc2.png">
+                <!-- Permeable Pavers -->
+                <p>
+                    <b>6. Permeable Pavers: </b><br><br>
+                    A Permeable Pavement stormwater runoff system stores water by allowing stormwater runoff to infiltrate through porous surfaces into a storage reservoir.          
+                </p>
+                <img src="images/Camera Roll/pavement.png">
+            </div>
+            <!-- Members Info -->
+            <div class="members">
+                <h1>Website Creators</h1>
+                <p>Huynh Ngoc Thanh - Student1339033</p>
+                <p>Nguyen Phat Tai - Student1316806</p>
+                <p>Nguyen Pham Thi Cam Tu - Student1335967</p>
+                <p>Nguyen Hai Hoang - Student1339262</p>
+            </div>
+        </section>
+    <!-- BODY End -->
 </body>
 
-<div class="footer">
-    <nav class="navbar-expand-lg navbar-light">
-        <img src="images/logo.png" alt="logo" id="logo" class="navbar-brand">
-        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <ul class="collapse navbar-collapse navbar-nav" id="navbarSupportedContent">
-            <li class="nav-item active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-            <li class="nav-item dropdown"><a href="#">Rainwater Harvesting</a>
-                <ul>
-                    <li><a href="residential.html">Residential Area</a></li>
-                    <li><a href="commercial.html">Commercial Area</a></li>
-                    <li><a href="product.html">Products</a></li>
-                </ul>
-            </li>
-            <li class="nav-item"><a href="method.html">Methods</a></li>
-            <li class="nav-item"><a href="development.html">Developments</a></li>
-            <li class="nav-item"><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="contact">
-    <p><i class="bi bi-house-fill"></i> 590 Cach Mang Thang Tam, Ward 11, District 3, Ho Chi Minh City</p>
-    <p><i class="bi bi-envelope-fill"></i> Group2@gmail.com</p>
-    <p><i class="bi bi-telephone-fill"></i> 1800 1779</p>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <nav class="navbar-expand-lg navbar-light">
+            <!-- Logo -->
+            <img src="images/logo.png" alt="logo" id="logo" class="navbar-brand">
+            <!-- Toggler -->
+            <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links -->
+            <ul class="collapse navbar-collapse navbar-nav" id="navbarSupportedContent">
+                <li class="nav-item active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item dropdown"><a href="#">Rainwater Harvesting</a>
+                    <ul>
+                        <li><a href="residential.html">Residential Area</a></li>
+                        <li><a href="commercial.html">Commercial Area</a></li>
+                        <li><a href="product.html">Products</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="method.html">Methods</a></li>
+                <li class="nav-item"><a href="development.html">Developments</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Contact info -->
+        <div class="contact">
+        <p><i class="bi bi-house-fill"></i> 590 Cach Mang Thang Tam, Ward 11, District 3, Ho Chi Minh City</p>
+        <p><i class="bi bi-envelope-fill"></i> Group2@gmail.com</p>
+        <p><i class="bi bi-telephone-fill"></i> 1800 1779</p>
+        </div>
+        <!-- Copyright -->
+        <hr>
+        <p style="padding: 12px 0px;">Copyright &copy; 2021 by Group 2. All rights reserved.</p>
     </div>
-    <hr>
-    <p style="padding: 12px 0px;">Copyright &copy; 2021 by Group 2. All rights reserved.</p>
-</div>
+    <!-- FOOTER End -->
 </html>
